@@ -1,0 +1,7 @@
+module CxxCats {
+    header "CxxCat.hpp"
+    export *
+    requires cplusplus
+}
+
+
