@@ -15,6 +15,11 @@ public:
 class House {
 public:
     House() {}
+    House(const House & other) = delete;
+    House(House && other) = default;
+    ~House() {}
+    House& operator=(const House & other) = delete;
+    House& operator=(House && other) noexcept = default;
 
     std::list<Cat> cats;
 };
